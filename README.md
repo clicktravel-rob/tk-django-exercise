@@ -16,28 +16,28 @@ that allows you to CRUD recipes and add/delete ingredients to them.
 ## GET /recipes/1/ ##
 ```
 {
-	“id”: 1,
-	“name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “dough”}, {“name”: “cheese”}, {“name”: “tomato”}]
+	"id": 1,
+	"name": "Pizza",
+	"description": "Put it in the oven",
+	"ingredients": [{"name": "dough"}, {"name": "cheese"}, {"name": "tomato"}]
 }
 ```
 ---
 ## POST /recipes/ ##
 ```
 {
-	“name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “dough”}, {“name”: “cheese”}, {“name”: “tomato”}]
+	"name": "Pizza",
+	"description": "Put it in the oven",
+	"ingredients": [{"name": "dough"}, {"name": "cheese"}, {"name": "tomato"}]
 }
 ```
 ### Response: ###
 ```
 {
-	“id”: 1,
-	“name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “dough”}, {“name”: “cheese”}, {“name”: “tomato”}]
+	"id": 1,
+	"name": "Pizza",
+	"description": "Put it in the oven",
+	"ingredients": [{"name": "dough"}, {"name": "cheese"}, {"name": "tomato"}]
 }
 ```
 ## Example recipe list ##
@@ -45,10 +45,10 @@ that allows you to CRUD recipes and add/delete ingredients to them.
 GET /recipes/
 [
     {
-	“id”: 1,
-      “name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “dough”}, {“name”: “cheese”}, {“name”: “tomato”}]
+	"id": 1,
+  "name": "Pizza",
+	"description": "Put it in the oven",
+	"ingredients": [{"name": "dough"}, {"name": "cheese"}, {"name": "tomato"}]
     }
 ]
 ```
@@ -58,10 +58,10 @@ GET /recipes/
 GET /recipes/?name=Pi
 [
     {
-      “id”: 1,
-	“name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “dough”}, {“name”: “cheese”}, {“name”: “tomato”}]
+      "id": 1,
+    	"name": "Pizza",
+    	"description": "Put it in the oven",
+    	"ingredients": [{"name": "dough"}, {"name": "cheese"}, {"name": "tomato"}]
     }
 ]
 ```
@@ -69,21 +69,21 @@ GET /recipes/?name=Pi
 ```
 PATCH /recipes/1/
     {
-	“name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “casa-tarradellas”}]
+	"name": "Pizza",
+	"description": "Put it in the oven",
+	"ingredients": [{"name": "casa-tarradellas"}]
     }
 ```
 Should delete the previous existing ingredients
-and put “casa-tarradellas” as only ingredient for recipe.
+and put "casa-tarradellas" as only ingredient for recipe.
 
 ### Response: ###
 ```
 {
-	“id”: 1,
-	“name”: “Pizza”
-	“description”: “Put it in the oven”,
-	“ingredients”: [{“name”: “casa-tarradellas”}]
+	"id": 1,
+	"name": "Pizza",
+	"description": "Put it in the oven",
+	"ingredients": [{"name": "casa-tarradellas"}]
 }
 ```
 ## Example recipe delete ##
