@@ -69,9 +69,9 @@ GET /recipes/?name=Pi
 ```
 PATCH /recipes/1/
     {
-	"name": "Pizza",
-	"description": "Put it in the oven",
-	"ingredients": [{"name": "casa-tarradellas"}]
+    	"name": "Pizza",
+    	"description": "Put it in the oven",
+    	"ingredients": [{"name": "casa-tarradellas"}]
     }
 ```
 Should delete the previous existing ingredients
